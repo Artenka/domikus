@@ -1,0 +1,75 @@
+.intro {
+ background: url(../img/intro/intro-bg.jpg) no-repeat center / cover;
+
+ > .main-wrapper {
+  padding: 80px 0 58px;
+  position: relative;
+  &:after {
+   content: '';
+   width: 1255px;
+   height: 940px;
+   background: url(../img/intro/intro-bg-pillows.png) no-repeat center / contain;
+   position: absolute;
+   bottom: -395px;
+   right: -505px;
+  }
+ }
+
+ .intro__title {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 1.79px;
+  text-transform: uppercase;
+ }
+ .intro__subtitle {
+  width: 620px;
+  font-size: 41px;
+  line-height: 47px;
+ }
+}
+
+.intro-list {
+ padding-top: 30px;
+ margin-top: 23px;
+ position: relative;
+ &:before {
+  content: '';
+  width: 140px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+
+ .intro-list__item {
+  display: flex;
+  align-items: center;
+  &:nth-child(3) {
+
+   .intro-list__item-text {
+    font-size: 25px;
+    font-weight: 700;
+   }
+  }
+
+  .intro-list__item-icon {
+   width: 30px;
+   height: 40px;
+   background: no-repeat center left / contain;
+   margin-right: 18px;
+  }
+  .intro-list__item-text {
+   font-size: 20px;
+   line-height: 40px;
+  }
+ }
+}
+
+.intro-timer {
+ margin-top: 40px;
+}
+
+.intro-btn {
+ margin-top: 40px;
+}

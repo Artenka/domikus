@@ -1,0 +1,44 @@
+section.catalog.page-section#catalog
+  .main-wrapper
+    h3.subtitle.catalog__title Выберите нужный размер и ткань:
+    ul.catalog-nav-1
+      li.catalog-nav-1__item.btn Полуторное
+      li.catalog-nav-1__item.btn Двойное
+      li.catalog-nav-1__item.btn Евро
+      li.catalog-nav-1__item.btn Детское
+
+    ul.catalog-nav-2
+      li.catalog-nav-2__item Микрофибра
+      li.catalog-nav-2__item Сатин
+      li.catalog-nav-2__item Ранфорс
+      li.catalog-nav-2__item Бязь
+      li.catalog-nav-2__item Подарочное
+
+    ul.catalog-list
+      li.catalog-item
+        .catalog-item__thumb(style="background-image: url(img/catalog/catalog-thumb.jpg)")
+        .catalog-item__colors
+          .catalog-item__color.catalog-item__color--active
+          .catalog-item__color
+          .catalog-item__color
+        .catalog-item__header
+          h2.catalog-item__title Cat's dream
+          .catalog-item__prices
+            h3.catalog-item__price-old 2000 грн
+            h3.catalog-item__price-new 1000 грн
+        .catalog-item__description
+          | Пододеяльник 145см*215см - 1шт,<br>
+          | простыня 145см*220см - 1шт,<br>
+          | наволочка - 2шт на выбор 70см*70см или 50см*70см
+        h3.catalog-item__counter Осталось: <b>12 комплектов</b>
+        .catalog-item__footer
+          button.catalog-item__btn.btn-2.btn-2--basket в корзину
+
+    button.btn.catalog-more показать еще
+      .catalog-more__icon
+        svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', width='20', height='20', viewBox='0 0 20 20')
+          defs
+            path#dw69a(d='M2134 2355a10 10 0 0 1 9.8 8h-2.73a7.35 7.35 0 0 0-12.75-2.66h2.68a1 1 0 0 1 1 1v.66a1 1 0 0 1-1 1h-6.8l.07-.32a1 1 0 0 1-.27-.68v-6a1 1 0 0 1 1-1h.66a1 1 0 0 1 1 1v2.2a9.97 9.97 0 0 1 7.34-3.2zm0 20a10 10 0 0 1-9.8-8h2.73a7.35 7.35 0 0 0 12.75 2.66H2137a1 1 0 0 1-1-1v-.66a1 1 0 0 1 1-1h6.8l-.07.32a1 1 0 0 1 .27.68v6a1 1 0 0 1-1 1h-.66a1 1 0 0 1-1-1v-2.2a9.97 9.97 0 0 1-7.34 3.2zm-10-10v-.05.05z')
+          g
+            g(transform='translate(-2124 -2355)')
+              use(fill='#993164', xlink:href='#dw69a')

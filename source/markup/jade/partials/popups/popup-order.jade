@@ -1,0 +1,72 @@
+#popup-order.popup-layout
+  .popup-scrollarea
+    .popup.popup-order
+      .popup__close
+
+      h2.popup-order__title Выбранные товары
+
+      ul.order-list
+        li.order-item
+          .order-item__thumb(style="background-image: url(img/catalog/catalog-thumb.jpg)")
+          .order-item__content
+            .catalog-item__header
+              h2.catalog-item__title Cat's dream
+            .catalog-item__description
+              | Пододеяльник 145см*215см - 1шт,<br>
+              | простыня 145см*220см - 1шт,<br>
+              | наволочка - 2шт на выбор 70см*70см или 50см*70см
+            .catalog-item__colors
+              .catalog-item__color.catalog-item__color--active
+              .catalog-item__color
+              .catalog-item__color
+          .order-item__counter-block
+            h2.title-sm Количество комплектов:
+            .custom-number-input
+              .custom-number-input__minus -
+              input(type="number" min="1" value="1")
+              .custom-number-input__plus +
+          .order-item__result
+            h2.title-sm Сумма:
+            .order-item__result-sum 2000 грн
+            button.order-item__result-delete Удалить комплект
+        li.order-item
+          .order-item__thumb(style="background-image: url(img/catalog/catalog-thumb.jpg)")
+          .order-item__content
+            .catalog-item__header
+              h2.catalog-item__title Cat's dream
+            .catalog-item__description
+              | Пододеяльник 145см*215см - 1шт,<br>
+              | простыня 145см*220см - 1шт,<br>
+              | наволочка - 2шт на выбор 70см*70см или 50см*70см
+            .catalog-item__colors
+              .catalog-item__color.catalog-item__color--active
+              .catalog-item__color
+              .catalog-item__color
+          .order-item__counter-block
+            h2.title-sm Количество комплектов:
+            .custom-number-input
+              .custom-number-input__minus -
+              input(type="number" min="1" value="1")
+              .custom-number-input__plus +
+          .order-item__result
+            h2.title-sm Сумма:
+            .order-item__result-sum 2000 грн
+            button.order-item__result-delete Удалить комплект
+
+      p.popup-order__text.popup-order__text--1
+        | Для заказа звоните:<br>
+        | <span>+38(095) 99 99 999</span> и <span>+38(095) 99 99 999</span>
+
+      .hr.popup-order__hr.popup-order__hr--1
+
+      p.popup-order__text.popup-order__text--2 Или заполните форму заказа:
+
+      form.order-form
+        .order-formgroup
+          input(type="email" placeholder="Ваш email")
+        .order-formgroup
+          input(type="tel" placeholder="Ваш телефон")
+        .order-submit
+          button(type="submit").btn-2.btn-2--clean заказать
+
+      .hr.popup-order__hr.popup-order__hr--2

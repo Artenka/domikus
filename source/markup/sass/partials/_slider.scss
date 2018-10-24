@@ -1,0 +1,30 @@
+.slick-dots {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 40px;
+
+ > li {
+  width: 14px;
+  height: 14px;
+  margin: 0 15px;
+
+  button {
+   display: block;
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
+   border: 1px solid transparent;
+   background-color: #ffffff;
+   font-size: 0;
+   outline: none;
+  }
+
+  &.slick-active {
+
+   button {
+    border-color: #993164;
+   }
+  }
+ }
+}

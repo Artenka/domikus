@@ -1,0 +1,31 @@
+section.reviews.page-section#reviews
+  .main-wrapper
+    h2.reviews__title.title Что говорят клиенты<br> о нашем посетельном белье
+
+    .reviews-slider
+      .reviews-slide
+        .reviews-slide__inner
+          .reviews-slide__photo(style="background-image: url(img/reviews/review-photo.jpg)")
+          p.reviews-slide__text Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          h3.reviews-slide__position <span>Ollie Schneider</span> - CEO DeerCreative
+      .reviews-slide
+        .reviews-slide__inner
+          .reviews-slide__photo(style="background-image: url(img/reviews/review-photo.jpg)")
+          p.reviews-slide__text Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          h3.reviews-slide__position <span>Ollie Schneider</span> - CEO DeerCreative
+      .reviews-slide
+        .reviews-slide__inner
+          .reviews-slide__photo(style="background-image: url(img/reviews/review-photo.jpg)")
+          p.reviews-slide__text Сonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          h3.reviews-slide__position <span>Ollie Schneider</span> - CEO DeerCreative
+
+script.
+  $(function () {
+    $('.reviews-slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true
+    });
+  });

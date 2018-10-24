@@ -1,0 +1,167 @@
+#popup-order {
+
+ .popup-scrollarea {
+  display: block;
+ }
+}
+
+.popup-order {
+ margin: 5vh auto;
+
+ .popup-order__title {
+  font-size: 29px;
+  line-height: 33px;
+  letter-spacing: 1.01px;
+  text-align: center;
+  padding: 0 430px;
+  position: relative;
+  &:before, &:after {
+   content: '';
+   width: 380px;
+   height: 1px;
+   background-color: #993164;
+   position: absolute;
+   top: 15px;
+  }
+  &:before {
+   left: 0;
+  }
+  &:after {
+   right: 0;
+  }
+ }
+
+ .popup-order__text {
+  display: block;
+  font-size: 22px;
+  line-height: 35px;
+  color: #696969;
+  letter-spacing: 0.22px;
+  text-align: center;
+
+  span {
+   color: #000;
+  }
+
+  &.popup-order__text--1 {
+   margin-top: 20px;
+  }
+ }
+
+ .popup-order__hr {
+
+  &.popup-order__hr--1 {
+   margin: 20px auto;
+  }
+  &.popup-order__hr--2 {
+   margin: 32px auto 0;
+  }
+ }
+}
+
+.order-list {
+ margin-top: 25px;
+}
+
+.order-item {
+ display: flex;
+ border-bottom: 1px solid #c2c2c2;
+ padding-bottom: 33px;
+ margin-bottom: 30px;
+ &:last-child {
+  margin-bottom: 0;
+ }
+
+ .order-item__thumb {
+  width: 250px;
+  height: 180px;
+  border-radius: 5px;
+  background: no-repeat center / cover,  linear-gradient(-41deg, #000000 0%, #ffffff 100%);
+  margin-right: 50px;
+ }
+
+ .order-item__content {
+  flex: 1;
+  padding-right: 50px;
+ }
+
+ .order-item__counter-block {
+  width: 160px;
+  padding-top: 25px;
+  margin-right: 60px;
+
+  .custom-number-input {
+   margin-top: 20px;
+  }
+ }
+
+ .order-item__result {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+
+  .order-item__result-sum {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #993164;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 30px;
+   padding: 20px 0;
+  }
+
+  .order-item__result-delete {
+   width: 100%;
+   color: #979999;
+   font-size: 13px;
+   letter-spacing: 0.65px;
+   text-align: center;
+   padding: 0 0 0 22px;
+   position: relative;
+   &:before {
+    content: '';
+    width: 18px;
+    height: 22px;
+    background: url(../img/common/trash-icon.png) no-repeat center / contain;
+    position: absolute;
+    top: calc(50% - 11px);
+    left: 0;
+   }
+   &:hover {
+    color: #993164;
+   }
+  }
+ }
+}
+
+.order-form {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ margin-top: 35px;
+}
+
+.order-formgroup {
+ width: 380px;
+ margin: 0 24px;
+}
+
+.order-submit {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 40px;
+
+ .btn-2.btn-2--clean {
+  width: 270px;
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  padding: 21px 42px 22px;
+ }
+}

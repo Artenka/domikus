@@ -1,0 +1,21 @@
+// common scss files
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/reset';
+@import 'common/global';
+@import 'common/fonts';
+// external libraries scss files
+@import 'lib/intlTelInput';
+@import 'lib/slick';
+// partials scss files
+@import 'partials/common';
+@import 'partials/buttons';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/slider';
+@import 'partials/popups';
+@import 'partials/popups/popup-thankyou';
+@import 'partials/popups/popup-order';
+// modules scss files
+@import 'modules/index';
+@import 'modules/home';
