@@ -1,0 +1,51 @@
+.cart-btn {
+ width: 54px;
+ height: 54px;
+ border-radius: 50%;
+ background: url(../img/common/cart-icon.png) no-repeat center, #6c3667;
+ position: fixed;
+ top: 80px;
+ right: calc(50vw - 605px);
+ z-index: 20;
+ transition: 0.7s;
+ cursor: pointer;
+ @include tablet {
+  top: 60px;
+  right: calc(50vw - 380px);
+ }
+ @include mobile {
+  width: 32px;
+  height: 32px;
+  background-size: 18px;
+  top: 50px;
+  right: calc(50vw - 190px);
+ }
+ &:hover {
+  background: url(../img/common/cart-icon.png) no-repeat center, #f69c84;
+  @include mobile {
+   background-size: 18px;
+  }
+ }
+
+ .cart-btn__counter {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(-41deg, #803575 0%, #ca3964 47%, #f77a63 100%);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  @include mobile {
+   width: 14px;
+   height: 14px;
+   font-size: 12px;
+   line-height: 16px;
+   top: -2px;
+   right: -2px;
+  }
+ }
+}
