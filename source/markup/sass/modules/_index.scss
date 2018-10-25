@@ -21,7 +21,7 @@ body {
  width: 1170px;
  margin: 0 auto;
  @include tablet {
-  width: 710px;
+  width: 720px;
  }
  @include mobile {
   width: 310px;
@@ -289,6 +289,10 @@ input, textarea, select, .input, .textarea, .select {
 
 textarea {
  resize: none;
+}
+
+select, .select {
+ background: url(../img/common/dropdown-icon.png) no-repeat center right 12px / 11px;
 }
 
 .input-normal {

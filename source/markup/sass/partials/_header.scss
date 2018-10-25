@@ -1,20 +1,119 @@
 .main-header {
  flex: 0 0 auto;
  padding: 20px 0;
+ @include tablet {
+  padding: 15px 0;
+ }
+ @include mobile {
+  padding: 16px 0 7px;
+ }
 
  .main-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mobile {
+   flex-wrap: wrap;
+  }
+ }
+
+ .logo {
+  @include mobile {
+   order: 1;
+  }
+
+  .logo-icon {
+   @include mobile {
+    display: none;
+   }
+  }
+  .logo-name {
+
+  }
+ }
+
+ .main-header__btn {
+  @include tablet {
+   text-transform: uppercase;
+  }
+  @include mobile {
+   display: none;
+  }
+ }
+
+ .main-header__hamburger {
+  display: none;
+  padding: 0;
+  @include mobile {
+   order: 2;
+   display: block;
+  }
+
+  .hamburger-box {
+   width: 20px;
+   height: 15px;
+   transition: 0.5s;
+  }
+
+  .hamburger-inner {
+   width: 20px;
+   height: 3px;
+   margin-top: 0;
+
+   &, &:before, &:after {
+    background: linear-gradient(-40deg, #803575 0%, #ca3964 47%, #f77a63 100%), #000;
+   }
+
+   &:before, &:after {
+    width: 20px;
+    height: 3px;
+   }
+   &:before {
+    top: -6px;
+   }
+   &:after {
+    top: -12px;
+   }
+  }
+
+  &.is-active {
+
+   .hamburger-box {
+    margin-bottom: -10px;
+   }
+
+   .hamburger-inner {
+    &:before, &:after {
+     top: 0;
+    }
+   }
+  }
  }
 }
 
+.main-header-menu-layout {
+ @include mobile {
+  order: 3;
+  width: 100%;
+  display: none;
+  margin-top: 20px;
+ }
+}
 .main-header-menu {
  display: flex;
  align-items: center;
+ @include mobile {
+  justify-content: center;
+ }
 
  .main-header-menu__item {
   margin-right: 30px;
+  @include tablet {
+   margin-right: 15px;
+  }
+  @include mobile {
+   margin: 0 10px;
+  }
   &:last-child {
    margin-right: 0;
   }
@@ -25,10 +124,21 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.46px;
+  @include tablet {
+   font-size: 12px;
+   letter-spacing: 0.42px;
+  }
+  @include mobile {
+   font-size: 11px;
+   letter-spacing: 0.3px;
+  }
  }
 }
 
 .main-header-phones {
+ @include tablet-mobile {
+  display: none;
+ }
 
  .main-header-phones__phone {
   display: block;

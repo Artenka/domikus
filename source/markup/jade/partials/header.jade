@@ -4,18 +4,32 @@ header.main-header
       .logo-icon
       .logo-name
 
-    ul.main-header-menu
-      li.main-header-menu__item
-        a(href="#catalog").main-header-menu__item-link.link-smooth каталог
-      li.main-header-menu__item
-        a(href="#about").main-header-menu__item-link.link-smooth о нас
-      li.main-header-menu__item
-        a(href="#reviews").main-header-menu__item-link.link-smooth отзывы
-      li.main-header-menu__item
-        a(href="#work").main-header-menu__item-link.link-smooth как мы работаем
+    .main-header-menu-layout
+      ul.main-header-menu
+        li.main-header-menu__item
+          a(href="#catalog").main-header-menu__item-link.link-smooth каталог
+        li.main-header-menu__item
+          a(href="#about").main-header-menu__item-link.link-smooth о нас
+        li.main-header-menu__item
+          a(href="#reviews").main-header-menu__item-link.link-smooth отзывы
+        li.main-header-menu__item
+          a(href="#work").main-header-menu__item-link.link-smooth как мы работаем
 
     .main-header-phones
       a(href="tel:+38(095)9999999").main-header-phones__phone +38(095) 99 99 999
       a(href="tel:+38(095)9999999").main-header-phones__phone +38(095) 99 99 999
 
     button.btn.btn--md.main-header__btn заказать звонок
+
+    .main-header__hamburger.hamburger.hamburger--collapse.js-hamburger
+      .hamburger-box
+        .hamburger-inner
+
+
+script.
+  $(function(){
+    $('.main-header__hamburger').click(function(){
+      $(this).toggleClass('is-active');
+      $('.main-header-menu-layout').slideToggle(300);
+    });
+  });

@@ -13,6 +13,12 @@
  transition: 1s;
  cursor: pointer;
  position: relative;
+ @include tablet {
+  border-radius: 19px;
+  font-size: 16px;
+  padding: 7px 20px 6px;
+  text-transform: none;
+ }
  &:hover {
   //background-image: linear-gradient(-40deg, #803575 0%, #ca3964 47%, #f77a63 100%);
   background: #953164;
@@ -22,6 +28,11 @@
  &.btn--md {
   border-radius: 24px;
   padding: 10px 35px;
+  @include tablet {
+   border-radius: 19px;
+   font-size: 13px;
+   padding: 5px 18px;
+  }
  }
 }
 
@@ -39,6 +50,17 @@
  position: relative;
  cursor: pointer;
  transition: 1s;
+ @include tablet {
+  border-radius: 28px;
+  font-size: 14px;
+  padding: 21px 85px 18px 36px;
+ }
+ @include mobile {
+  border-radius: 22px;
+  font-size: 12px;
+  line-height: normal;
+  padding: 16px 65px 14px 27px;
+ }
  &:after {
   content: '';
   width: 65px;
@@ -48,6 +70,14 @@
   position: absolute;
   top: 0;
   right: 0;
+  @include tablet {
+   width: 56px;
+   height: 56px;
+  }
+  @include mobile {
+   width: 44px;
+   height: 44px;
+  }
  }
  &:hover {
   color: #ffffff;
@@ -57,15 +87,30 @@
  &.btn-2--arrow {
   &:after {
    background: url(../img/common/arrow-right.png) no-repeat center, rgba(0,0,0,0.08);
+   @include tablet {
+    background-size: 16px;
+   }
+   @include mobile {
+    background-size: 13px;
+   }
   }
  }
  &.btn-2--basket {
   font-size: 13px;
   padding: 19px 123px 17px 45px;
+  @include mobile {
+   font-size: 11px;
+   padding: 16px 106px 15px 39px;
+  }
   &:after {
    width: 52px;
    height: 52px;
    background: url(../img/common/basket-icon.svg) no-repeat center / 23px, rgba(0,0,0,0.08);
+   @include mobile {
+    width: 44px;
+    height: 44px;
+    background-size: 19px;
+   }
   }
  }
  &.btn-2--clean {

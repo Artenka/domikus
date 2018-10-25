@@ -1,6 +1,12 @@
 .reviews {
  padding: 50px 0 57px;
  position: relative;
+ @include tablet {
+  padding: 35px 0 40px;
+ }
+ @include mobile {
+  padding: 30px 0 25px;
+ }
  &:before {
   content: '';
   width: 100%;
@@ -20,6 +26,12 @@
   position: absolute;
   top: 0;
   right: 0;
+  @include tablet {
+   width: calc(50% + 90px);
+  }
+  @include mobile {
+   width: 50%;
+  }
  }
 
  .main-wrapper {
@@ -33,14 +45,30 @@
    position: absolute;
    bottom: -89px;
    left: -258px;
+   @include tablet {
+    width: 275px;
+    height: 187px;
+    bottom: -94px;
+    left: -146px;
+   }
+   @include mobile {
+    display: none;
+   }
   }
  }
 }
 
 .reviews-slider {
  width: 890px;
- //padding-bottom: 50px;
  margin: 50px auto 0;
+ @include tablet {
+  width: 690px;
+  margin-top: 35px;
+ }
+ @include mobile {
+  width: 300px;
+  margin-top: 35px;
+ }
 }
 
 .reviews-slide {
@@ -57,6 +85,14 @@
   height: 103px;
   border-radius: 50%;
   background: no-repeat center / cover;
+  @include tablet {
+   width: 91px;
+   height: 91px;
+  }
+  @include mobile {
+   width: 72px;
+   height: 72px;
+  }
  }
 
  .reviews-slide__text {
@@ -65,6 +101,17 @@
   line-height: 29px;
   letter-spacing: 0.54px;
   margin-top: 35px;
+  @include tablet {
+   font-size: 16px;
+   line-height: 25px;
+   letter-spacing: 0.48px;
+  }
+  @include mobile {
+   font-size: 14px;
+   line-height: 21px;
+   letter-spacing: 0.42px;
+   margin-top: 25px;
+  }
  }
 
  .reviews-slide__position {
