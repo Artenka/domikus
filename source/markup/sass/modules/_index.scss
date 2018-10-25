@@ -282,6 +282,13 @@ input, textarea, select, .input, .textarea, .select {
  padding: 19px 33px 15px;
  outline: none;
  transition: 0.5s;
+ @include mobile {
+  border-radius: 31px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  padding: 14px 20px 10px;
+ }
  &:focus, &:active {
   border-color: #993164;
  }

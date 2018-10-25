@@ -25,6 +25,13 @@
  background-color: #ffffff;
  padding: 55px 35px 50px;
  position: relative;
+ @include tablet {
+  width: 700px;
+ }
+ @include mobile {
+  width: 300px;
+  padding: 35px 20px 30px;
+ }
 
  .popup__close {
   width: 36px;
@@ -35,5 +42,10 @@
   top: -57px;
   right: 4px;
   cursor: pointer;
+  @include mobile {
+   width: 24px;
+   height: 24px;
+   top: -34px;
+  }
  }
 }
